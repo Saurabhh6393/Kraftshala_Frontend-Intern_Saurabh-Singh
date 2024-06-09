@@ -15,7 +15,7 @@ function Table() {
     }); 
 
     const getDelhiData = () =>{
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=833c32f0c838900cb8dce155af5d84b0&&units=metric`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=ecbcfb951cf718140baf57d9766c28c8&&units=metric`;
     axios.get(apiUrl).then(res => { 
 
         console.log("working")
@@ -40,7 +40,7 @@ function Table() {
         });
 
         const getBanglaruData = () =>{
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Bengaluru&appid=833c32f0c838900cb8dce155af5d84b0&&units=metric`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Bengaluru&appid=ecbcfb951cf718140baf57d9766c28c8&&units=metric`;
         axios.get(apiUrl).then(res => { 
     
             console.log("working")
@@ -65,7 +65,7 @@ function Table() {
             });
     
             const getMumbaiData = () =>{
-                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=833c32f0c838900cb8dce155af5d84b0&&units=metric`;
+                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=ecbcfb951cf718140baf57d9766c28c8&&units=metric`;
                 axios.get(apiUrl).then(res => { 
         
                 console.log("working")
