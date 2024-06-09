@@ -1,4 +1,4 @@
-import React, { useState ,useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { CiSearch } from "react-icons/ci";
 import moment from 'moment';
@@ -17,7 +17,7 @@ function Home() {
     
     const[name , setName] = useState("");
 
-    const theme =localStorage.getItem('theme')
+    //const theme =localStorage.getItem('theme')
     //const API_KEY = "23b73d8aa858248c9a90fbf7a80d4737";
     //const url = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}"
 
@@ -29,22 +29,22 @@ function Home() {
              axios.get(apiUrl).then(res => {
                 let imagePath ="";
 
-                if(res.data.weather[0].main == "Clouds"){
+                if(res.data.weather[0].main === "Clouds"){
                     imagePath = "clouds.png";
                 }
-                else if(res.data.weather[0].main == "Clear"){
+                else if(res.data.weather[0].main === "Clear"){
                     imagePath = "clear.png";
                 }
-                else if(res.data.weather[0].main == "Rain"){
+                else if(res.data.weather[0].main === "Rain"){
                     imagePath = "rain.png";
                 }
-                else if(res.data.weather[0].main == "Drizzle"){
+                else if(res.data.weather[0].main === "Drizzle"){
                     imagePath = "drizzle.png";
                 }
-                else if(res.data.weather[0].main == "Mist"){
+                else if(res.data.weather[0].main === "Mist"){
                     imagePath = "mist.png";
                 }
-                else if(res.data.weather[0].main == "Snow"){
+                else if(res.data.weather[0].main === "Snow"){
                     imagePath = "snow.png";
                 }
                 else{

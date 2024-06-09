@@ -26,7 +26,7 @@ function Table() {
 
     useEffect(()=>{
         getDelhiData()
-    },[])
+    })
 
     const [bdata ,bsetdata] = useState({
     
@@ -51,7 +51,7 @@ function Table() {
     
         useEffect(()=>{
             getBanglaruData()
-        },[])
+        })
 
         const [mdata ,msetdata] = useState({
     
@@ -76,7 +76,7 @@ function Table() {
         
             useEffect(()=>{
                 getMumbaiData()
-            },[])
+            })
         
             
   return (
