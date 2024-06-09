@@ -25,7 +25,7 @@ function Home() {
        
         if(name !== ""){
 
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=833c32f0c838900cb8dce155af5d84b0&&units=metric`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=ecbcfb951cf718140baf57d9766c28c8&&units=metric`;
              axios.get(apiUrl).then(res => {
                 let imagePath ="";
 
